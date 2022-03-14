@@ -64,7 +64,6 @@
         <div class="container mb-3 py-4">
         <h1 class="text-center text-primary mt-sm-8" style="margin-top: 10%;"><b>Contact Form</b></h1>
         <form method="post" action="contact.html">
-          {% csrf_token %}
           <div class="form-group my-3">
             <label style="font-size: 24px;" for="name">Name</label>
             <input type="text" class="form-control my-2 col-lg-4 " id="name" name="name" placeholder="Enter your Name">
@@ -89,6 +88,7 @@
             <label style="font-size: 20px;" for="date">Date</label>
             <textarea class="form-control my-2 col-lg-4 " id="date" rows="2" name="date"></textarea>  
           </div>
+          <p><b class="text-danger">Login Disabled (Not available in DEMO)</b></p>
           <button class="btn btn-outline-primary" type="submit">Submit</button>
           <!--<a class="btn btn-outline-primary" href="/logout" role="button">Logout</a>  -->
     
